@@ -12,16 +12,16 @@ vector<int> randomVector(unsigned int N){
 
 void showVector(const vector<int> &v){
 	cout << "[";
-	for(unsigned int i = 0; v.size(); i++){
+	for(unsigned int i = 0; i < v.size(); i++){
 		cout << v[i];
-		if(i == v.size() - 1) cout << "]";
+		if(i == v.size()-1) cout << "]";
 		else cout << " ";
 	}
 }
 
 int dotProduct(const vector<int> &a,const vector<int> &b){
 	int sum = 0;
-	for(unsigned int i = 0; i < a.size(); i++) sum += a[i]*b[i];	
+	for(unsigned int i = 0; i<a.size(); i++) sum += (a[i]*b[i]);	
 	return sum;
 }
 
